@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Holiday Planner</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-accent">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Holiday Planner</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#search-section">Plan Trip</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#itinerary-section">Itinerary</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <header class="hero-section text-center d-flex align-items-center">
+    <div class="container">
+      <h1 class="display-5 fw-bold mb-3">Plan your dream vacation</h1>
+      <p class="lead mb-4">Choose your perfect destination, craft unforgettable activities and keep track of your budget with ease.</p>
+      <a href="#search-section" class="btn btn-accent btn-lg">Start Planning</a>
+    </div>
+  </header>
+
+  <!-- Main container -->
+  <main class="container py-5">
+    <!-- Destination search section -->
+    <section id="search-section" class="mb-5">
+      <h2 class="section-title mb-3">1. Choose your interests</h2>
+      <p class="mb-3">Select the type of vacation you are interested in and explore suggested destinations.</p>
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="interest" id="interestBeach" value="beach">
+            <label class="form-check-label" for="interestBeach">Beach</label>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="interest" id="interestMountains" value="mountains">
+            <label class="form-check-label" for="interestMountains">Mountains</label>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="interest" id="interestCity" value="city">
+            <label class="form-check-label" for="interestCity">City</label>
+          </div>
+        </div>
+      </div>
+      <button id="search-button" class="btn btn-accent">Search Destinations</button>
+      <div id="destination-list" class="row mt-4"></div>
+    </section>
+
+    <!-- Accommodation and transport section -->
+    <section id="accommodation-section" class="mb-5" style="display:none;">
+      <h2 class="section-title mb-3">2. Pick accommodation & transport</h2>
+      <p class="mb-3"><span id="selected-destination-name" class="fw-bold"></span> selected. Set up your stay and journey.</p>
+      <div class="row mb-3">
+        <div class="col-md-4 mb-3">
+          <label for="nights-input" class="form-label">Number of nights</label>
+          <input type="number" class="form-control" id="nights-input" min="1" value="1">
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="accommodation-select" class="form-label">Accommodation</label>
+          <select class="form-select" id="accommodation-select"></select>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="transport-select" class="form-label">Transport</label>
+          <select class="form-select" id="transport-select"></select>
+        </div>
+      </div>
+      <button id="next-to-activities" class="btn btn-accent">Next: Activities</button>
+    </section>
+
+    <!-- Activities section -->
+    <section id="activities-section" class="mb-5" style="display:none;">
+      <h2 class="section-title mb-3">3. Select activities</h2>
+      <p class="mb-3">Choose the activities you'd like to enjoy. For each selected activity, pick a date and time.</p>
+      <div id="activities-list" class="mb-4"></div>
+      <div id="activity-schedule" class="mb-4"></div>
+      <button id="add-to-itinerary" class="btn btn-accent">Add to Itinerary</button>
+    </section>
+
+    <!-- Itinerary section -->
+    <section id="itinerary-section" style="display:none;">
+      <h2 class="section-title mb-3">4. Trip itinerary & budget</h2>
+      <div id="itinerary-summary" class="mb-4"></div>
+      <button id="reset-button" class="btn btn-secondary">Reset Plan</button>
+    </section>
+  </main>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom script -->
+  <script src="script.js"></script>
+</body>
+</html>
