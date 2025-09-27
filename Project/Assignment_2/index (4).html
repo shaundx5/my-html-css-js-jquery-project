@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florence - The Renaissance Heart of Italy</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="florence-skyline">
+                <div class="building building-1"></div>
+                <div class="building building-2"></div>
+                <div class="building building-3"></div>
+                <div class="building building-4"></div>
+                <div class="building building-5"></div>
+            </div>
+            <p class="loading-text">Discovering Florence...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="brand-text">Florence</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <!-- Added icon to Attractions nav link -->
+                        <a class="nav-link" href="#attractions">
+                            <i class="nav-icon">🏛️</i>
+                            <span>Attractions</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Added icon to Restaurants nav link -->
+                        <a class="nav-link" href="#restaurants">
+                            <i class="nav-icon">🍽️</i>
+                            <span>Restaurants</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Added icon to Things to Do nav link -->
+                        <a class="nav-link" href="#things-to-do">
+                            <i class="nav-icon">🎯</i>
+                            <span>Things to Do</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Added icon to Events nav link -->
+                        <a class="nav-link" href="#events">
+                            <i class="nav-icon">🎭</i>
+                            <span>Events</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Added icon to Contact nav link -->
+                        <a class="nav-link" href="#contact">
+                            <i class="nav-icon">📧</i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Wrapper for Accessibility -->
+    <main id="main-content">
+        <!-- Hero Section -->
+
+        <section id="home" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-background"></div>
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-10">
+                        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                            <h1 class="hero-title">
+                                <span class="title-line">Florence</span>
+                                <span class="title-subtitle">The Renaissance Heart of Italy</span>
+                            </h1>
+                            <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                                Discover the birthplace of the Renaissance, where art, culture, and history converge in magnificent harmony
+                            </p>
+                            <a href="#attractions" class="btn btn-explore" data-aos="fade-up" data-aos-delay="400">
+                                Explore Florence
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Attractions Section -->
+        <section id="attractions" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center mb-5">
+                        <h2 class="section-title" data-aos="fade-up">Historic Attractions</h2>
+                        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            Explore Florence's most iconic landmarks and architectural marvels
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row g-4 mb-5">
+                    <!-- Attraction Cards will be populated here -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="attraction-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="images/attractions/Ponte_Vecchio_from_Ponte_alle_Grazie.jpg" "height=300&width=400" alt="Ponte Vecchio" class="card-image">
+                                    <div class="card-overlay">
+                                        <h3 class="card-title">Ponte Vecchio</h3>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <h3>Ponte Vecchio</h3>
+                                        <p>The iconic medieval bridge spanning the Arno River, famous for its jewelry shops and stunning sunset views.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="attraction-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="images/attractions/piazzale-michelangelo.jpg" height=300&width=400" alt="Piazzale Michelangelo" class="card-image">
+                                    <div class="card-overlay">
+                                        <h3 class="card-title">Piazzale Michelangelo</h3>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <h3>Piazzale Michelangelo</h3>
+                                        <p>The most famous viewpoint in Florence, offering breathtaking panoramic views of the entire city and the Arno valley.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="attraction-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="images/attractions/bob.jpg.avif" "height=300&width=400" alt="Boboli Gardens" class="card-image">
+                                    <div class="card-overlay">
+                                        <h3 class="card-title">Boboli Gardens</h3>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <h3>Boboli Gardens</h3>
+                                        <p>Historic park behind Pitti Palace, featuring Renaissance landscaping, sculptures, and peaceful walking paths.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="attraction-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="images/attractions/piazza-della-signoria.jpg" "height=300&width=400" alt="Piazza della Signoria" class="card-image">
+                                    <div class="card-overlay">
+                                        <h3 class="card-title">Piazza della Signoria</h3>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <h3>Piazza della Signoria</h3>
+                                        <p>The political heart of Florence, home to Palazzo Vecchio and an open-air sculpture gallery with masterpieces.</p>
+                                                                           </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="attraction-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="images/attractions/san-miniato.jpg" "height=300&width=400" alt="San Miniato al Monte" class="card-image">
+                                    <div class="card-overlay">
+                                        <h3 class="card-title">San Miniato al Monte</h3>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <h3>San Miniato al Monte</h3>
+                                        <p>Beautiful Romanesque basilica perched on a hilltop, offering spectacular views and exquisite marble inlay work.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Added 6th attraction card -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                        <div class="attraction-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="images/attractions/palazzo-pitti.jpg.avif" "height=300&width=400" alt="Palazzo Pitti" class="card-image">
+                                    <div class="card-overlay">
+                                        <h3 class="card-title">Palazzo Pitti</h3>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <h3>Palazzo Pitti</h3>
+                                        <p>Renaissance palace housing multiple museums and galleries, including the Palatine Gallery with works by Raphael and Titian.</p>
+                                                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div class="row">
+                    <div class="col-12" data-aos="fade-up">
+                        <div class="map-container">
+                            <h3 class="map-title">Find These Attractions</h3>
+                                <div class="map mt-5" data-aos="fade-up">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.4300325746196!2d11.255814215738438!3d43.77313317911721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a5409d4f4f7ed%3A0x75f71b3ffe5e3dc5!2sCattedrale%20di%20Santa%20Maria%20del%20Fiore!5e0!3m2!1sen!2sit!4v1633272577378!5m2!1sen!2sit" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Restaurants Section -->
+        <section id="restaurants" class="section-padding bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center mb-5">
+                        <h2 class="section-title" data-aos="fade-up">Restaurants & Cafés</h2>
+                        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            Savor authentic Tuscan flavors and world-class dining experiences
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="restaurant-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="images/restaurants/gio.jpeg" "height=300&width=400" alt="Osteria di Giovanni" class="card-image">
+                                    <div class="card-overlay">
+                                        <h3 class="card-title">Osteria di Giovanni</h3>
+                                        <div class="card-info">
+                                            <span class="cuisine">Traditional Tuscan</span>
+                                            <span class="rating">★★★★★</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <h3>Osteria di Giovanni</h3>
+                                        <p class="cuisine-type">Traditional Tuscan Cuisine</p>
+                                        <p>Family-run restaurant serving authentic Florentine dishes with locally sourced ingredients and traditional recipes passed down through generations.</p>
+                                        <div class="restaurant-details">
+                                            <p><strong>Location:</strong> Via del Moro, 22</p>
+                                            <p><strong>Rating:</strong> ★★★★★ (4.8/5)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="restaurant-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                     <img src="images/restaurants/il-palagio.jpg" "height=300&width=400" alt="Il Palagio" class="card-image">
+                                    <div class="card-overlay">
+                                        <h3 class="card-title">Il Palagio</h3>
+                                        <div class="card-info">
+                                            <span class="cuisine">Fine Dining</span>
+                                            <span class="rating">★★★★★</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <h3>Il Palagio</h3>
+                                        <p class="cuisine-type">Contemporary Italian Fine Dining</p>
+                                        <p>Michelin-starred restaurant offering innovative interpretations of Italian classics in an elegant setting overlooking the Arno River.</p>
+                                        <div class="restaurant-details">
+                                            <p><strong>Location:</strong> Four Seasons Hotel</p>
+                                            <p><strong>Rating:</strong> ★★★★★ (4.9/5)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="restaurant-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                     <img src="images/restaurants/trattoria-mario.jpg" "height=300&width=400" alt="Trattoria Mario" class="card-image">
+                                    <div class="card-overlay">
+                                        <h3 class="card-title">Trattoria Mario</h3>
+                                        <div class="card-info">
+                                            <span class="cuisine">Local Trattoria</span>
+                                            <span class="rating">★★★★☆</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <h3>Trattoria Mario</h3>
+                                        <p class="cuisine-type">Authentic Local Trattoria</p>
+                                        <p>Historic no-frills trattoria serving hearty Tuscan fare since 1953. Famous for its communal tables and authentic atmosphere.</p>
+                                        <div class="restaurant-details">
+                                            <p><strong>Location:</strong> Via Rosina, 2r</p>
+                                            <p><strong>Rating:</strong> ★★★★☆ (4.5/5)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="restaurant-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                     <img src="images/restaurants/caffe-gilli.jpg" "height=300&width=400" alt="Caffè Gilli" class="card-image">
+                                    <div class="card-overlay">
+                                        <h3 class="card-title">Caffè Gilli</h3>
+                                        <div class="card-info">
+                                            <span class="cuisine">Historic Café</span>
+                                            <span class="rating">★★★★☆</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <h3>Caffè Gilli</h3>
+                                        <p class="cuisine-type">Historic Café & Pastry Shop</p>
+                                        <p>Florence's oldest café, established in 1733. Famous for its Belle Époque interiors, excellent coffee, and traditional pastries.</p>
+                                        <div class="restaurant-details">
+                                            <p><strong>Location:</strong> Piazza della Repubblica</p>
+                                            <p><strong>Rating:</strong> ★★★★☆ (4.4/5)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="restaurant-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                     <img src="images/restaurants/enoteca-pinchiorri.jpg" "height=300&width=400" alt="Enoteca Pinchiorri" class="card-image">
+                                    <div class="card-overlay">
+                                        <h3 class="card-title">Enoteca Pinchiorri</h3>
+                                        <div class="card-info">
+                                            <span class="cuisine">Wine Restaurant</span>
+                                            <span class="rating">★★★★★</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <h3>Enoteca Pinchiorri</h3>
+                                        <p class="cuisine-type">Gourmet Wine Restaurant</p>
+                                        <p>Three Michelin-starred restaurant with one of the world's finest wine cellars, offering exceptional cuisine and wine pairings.</p>
+                                        <div class="restaurant-details">
+                                            <p><strong>Location:</strong> Via Ghibellina, 87</p>
+                                            <p><strong>Rating:</strong> ★★★★★ (4.7/5)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                        <!-- Added 6th restaurant card -->
+                        <div class="restaurant-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                     <img src="images/restaurants/antico-vinaio-firenze.jpeg.webp" "height=300&width=400" alt="All'Antico Vinaio" class="card-image">
+                                    <div class="card-overlay">
+                                        <h3 class="card-title">All'Antico Vinaio</h3>
+                                        <div class="card-info">
+                                            <span class="cuisine">Sandwich Shop</span>
+                                            <span class="rating">★★★★☆</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <h3>All'Antico Vinaio</h3>
+                                        <p class="cuisine-type">Gourmet Sandwich Shop</p>
+                                        <p>Famous for its enormous, delicious sandwiches made with fresh local ingredients. A must-try Florentine street food experience.</p>
+                                        <div class="restaurant-details">
+                                            <p><strong>Location:</strong> Via dei Neri, 65r</p>
+                                            <p><strong>Rating:</strong> ★★★★☆ (4.6/5)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Things to Do Section -->
+        <section id="things-to-do" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center mb-5">
+                        <h2 class="section-title" data-aos="fade-up">Things to Do</h2>
+                        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            Immerse yourself in Florence's rich culture and vibrant activities
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="activity-card">
+                            <img src="images/todo/uffizi-gallery.jpg" "height=250&width=400" alt="Uffizi Gallery" class="card-image">
+                            <div class="card-content">
+                                <h3 class="card-title">Visit Uffizi Gallery</h3>
+                                <p>Explore one of the world's most famous art museums, home to masterpieces by Botticelli, Michelangelo, and Leonardo da Vinci.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="activity-card">
+                            <img src="images/todo/oltrarno-shopping.jpeg" "height=250&width=400" alt="Oltrarno Shopping" class="card-image">
+                            <div class="card-content">
+                                <h3 class="card-title">Shop in Oltrarno</h3>
+                                <p>Discover authentic artisan workshops and boutiques in the charming Oltrarno district, perfect for unique souvenirs and crafts.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="activity-card">
+                            <img src="images/todo/cooking-class.jpg" "height=250&width=400" alt="Cooking Classes" class="card-image">
+                            <div class="card-content">
+                                <h3 class="card-title">Take Cooking Classes</h3>
+                                <p>Learn to prepare authentic Tuscan dishes with local chefs, from handmade pasta to traditional desserts and wine pairings.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="activity-card">
+                            <img src="images/todo/cascine-park.jpg" "height=250&width=400" alt="Cascine Park" class="card-image">
+                            <div class="card-content">
+                                <h3 class="card-title">Relax in Cascine Park</h3>
+                                <p>Enjoy Florence's largest public park, perfect for jogging, picnicking, or simply relaxing along the Arno River.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="activity-card">
+                            <img src="images/todo/nightlife.jpg" "height=250&width=400" alt="Nightlife" class="card-image">
+                            <div class="card-content">
+                                <h3 class="card-title">Experience Nightlife</h3>
+                                <p>Enjoy aperitivo culture, rooftop bars with stunning views, and vibrant nightlife in the historic center and trendy neighborhoods.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                        <!-- Added 6th things to do activity -->
+                        <div class="activity-card">
+                            <img src="images/todo/wine-tasting.jpg" "height=250&width=400" alt="Wine Tasting" class="card-image">
+                            <div class="card-content">
+                                <h3 class="card-title">Wine Tasting Tours</h3>
+                                <p>Explore the renowned Chianti wine region with guided tastings at historic vineyards and cellars, learning about Tuscan winemaking traditions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Local Events Section -->
+        <section id="events" class="section-padding bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center mb-5">
+                        <h2 class="section-title" data-aos="fade-up">Local Events</h2>
+                        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            Experience Florence's vibrant cultural calendar and traditional celebrations
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="event-card" tabindex="0" role="button">
+                            <img src="images/events/calcio-storico.jpg" "height=200&width=400" alt="Calcio Storico" class="card-image">
+                            <div class="card-content">
+                                <div class="event-date">June</div>
+                                <h3 class="card-title">Calcio Storico</h3>
+                                <p>Historic football tournament dating back to the 16th century, played in medieval costumes in Piazza Santa Croce.</p>
+                                <div class="event-details">
+                                    <span class="event-type">Traditional Sport</span>
+                                    <span class="event-location">Piazza Santa Croce</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="event-card" tabindex="0" role="button">
+                            <img src="images/events/maggio-musicale.jpg" "height=200&width=400" alt="Maggio Musicale" class="card-image">
+                            <div class="card-content">
+                                <div class="event-date">May-June</div>
+                                <h3 class="card-title">Maggio Musicale</h3>
+                                <p>International opera and classical music festival featuring world-renowned artists and orchestras in historic venues.</p>
+                                <div class="event-details">
+                                    <span class="event-type">Music Festival</span>
+                                    <span class="event-location">Teatro dell'Opera</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="event-card" tabindex="0" role="button">
+                            <img src="images/events/san-giovanni-festa.jpeg" "height=200&width=400" alt="Festa di San Giovanni" class="card-image">
+                            <div class="card-content">
+                                <div class="event-date">June 24</div>
+                                <h3 class="card-title">Festa di San Giovanni</h3>
+                                <p>Florence's patron saint celebration with spectacular fireworks over the Arno River and traditional festivities.</p>
+                                <div class="event-details">
+                                    <span class="event-type">Religious Festival</span>
+                                    <span class="event-location">City Center</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="event-card" tabindex="0" role="button">
+                            <img src="images/events/notte-bianca.jpg" "height=200&width=400" alt="Notte Bianca" class="card-image">
+                            <div class="card-content">
+                                <div class="event-date">September</div>
+                                <h3 class="card-title">Notte Bianca</h3>
+                                <p>White Night when museums, galleries, and cultural sites stay open late with special exhibitions and events.</p>
+                                <div class="event-details">
+                                    <span class="event-type">Cultural Event</span>
+                                    <span class="event-location">Citywide</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="event-card" tabindex="0" role="button">
+                            <img src="images/events/scoppio-del-carro.jpeg" "height=200&width=400" alt="Scoppio del Carro" class="card-image">
+                            <div class="card-content">
+                                <div class="event-date">Easter</div>
+                                <h3 class="card-title">Scoppio del Carro</h3>
+                                <p>Ancient Easter tradition featuring the explosion of a decorated cart in front of the Duomo, dating back 350 years.</p>
+                                <div class="event-details">
+                                    <span class="event-type">Traditional Ceremony</span>
+                                    <span class="event-location">Piazza del Duomo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Added 6th event card for Christmas Markets -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                        <div class="event-card" tabindex="0" role="button">
+                            <img src="images/events/christmas-market.jpg" "height=200&width=400" alt="Christmas Markets" class="card-image">
+                            <div class="card-content">
+                                <div class="event-date">December</div>
+                                <h3 class="card-title">Christmas Markets</h3>
+                                <p>Festive holiday markets throughout the city featuring local crafts, traditional foods, and seasonal celebrations.</p>
+                                <div class="event-details">
+                                    <span class="event-type">Holiday Market</span>
+                                    <span class="event-location">Various Locations</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center mb-5">
+                        <h2 class="section-title" data-aos="fade-up">Contact Us</h2>
+                        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            Plan your perfect Florence experience with our local experts
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+                        <form class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-info">
+                            <h3>Florence Travel Guide</h3>
+                            <div class="contact-item">
+                                <h4>Local Tour Operator</h4>
+                                <p>Discover Florence Tours<br>
+                                Via dei Calzaiuoli, 15<br>
+                                50122 Florence, Italy</p>
+                            </div>
+                            <div class="contact-item">
+                                <h4>Contact Information</h4>
+                                <p>Phone: +39 055 123 4567<br>
+                                Email: info@discoverflorence.com<br>
+                                Hours: 9:00 AM - 7:00 PM</p>
+                            </div>
+                            <div class="contact-item">
+                                <h4>Hotel Recommendations</h4>
+                                <p>Hotel Davanzati<br>
+                                Villa San Michele<br>
+                                Four Seasons Hotel Firenze</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="footer-text">&copy; 2025 Florence Travel Guide. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="footer-links">
+                        <li><a href="#attractions">Attractions</a></li>
+                        <li><a href="#restaurants">Restaurants</a></li>
+                        <li><a href="#things-to-do">Things to Do</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <!-- Added Gallery link to footer navigation -->
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="arrow-up">↑</i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
